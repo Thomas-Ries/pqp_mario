@@ -1,0 +1,132 @@
+* {
+    font-size: 10px;
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+}
+
+.red {background: #D34B5B; padding: .6em 0 0 .6em;}
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+h1 {
+    color: #fff !important;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 15rem;
+}
+
+h2 {
+    color: #fff !important;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+
+h3 {
+    color: #fff !important;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: -.5rem;
+    text-decoration: underline;
+}
+
+.controlLegend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 42rem;
+    margin: 0 auto;
+}
+
+p {
+    color: #fff;
+    font-size: 18px
+}
+
+.rightControl,
+.leftControl,
+.jumpControl
+ {
+    display: flex;
+    align-items: center;
+}
+
+.leftControl,
+.spaceBar {
+    margin-left: 2rem;
+}
+
+.arrowRight,
+.arrowLeft,
+.spaceBar {
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 0 !important;
+    font-size: 2rem;
+}
+
+.pixel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    margin-top: 5rem !important;
+    width: 22rem;
+    height: 5em;
+    float: left;
+    margin: 0 0.625em;
+    outline: solid 0.25em #000;
+    box-shadow: inset .313em .313em 0 rgba(0,0,0,0.4), inset -.313em -.313em 0 rgba(255,255,255,0.4), 0 1em 0.625em -.4em rgba(0,0,0,0.8);
+    transition: linear .2s;
+  }
+  
+  .pixel:hover {
+    box-shadow: inset .313em .313em 0 rgba(0,0,0,0.8), inset -.313em -.313em 0 rgba(255,255,255,0.6), 0 1em 0.625em -.4em rgba(255,255,255,0.8);
+  }
+  
+  .pixel:before {
+    content: " ";
+    position: absolute;
+    top: -.25em;
+    left: -.25em;
+    width: .625em;
+    height: .625em;
+    background: #1b1b1b;
+    border-bottom: solid .25em #000;
+    border-right: solid .25em #000;
+    box-shadow: .25em .25em 0 #FFF, .1em .9em 0 -.2em #FFF, 0.9em 0.1em 0 -.2em #FFF;
+  }
+  
+  .pixel:after {
+    content: " ";
+    position: absolute;
+    bottom: -.25em;
+    right: -.25em;
+    width: .625em;
+    height: .625em;
+    background: #1b1b1b;
+    border-top: solid .25em #000;
+    border-left: solid .25em #000;
+    box-shadow: -.25em -.25em 0 #FFF, -.1em -.9em 0 -.2em #FFF, -0.9em -0.1em 0 -.2em #FFF;
+  }
+  
